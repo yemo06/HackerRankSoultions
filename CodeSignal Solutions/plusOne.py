@@ -4,7 +4,7 @@
 # The large integer does not contain any leading 0's.
 #Increment the large integer by one and return the resulting array of digits.
 
-def plusOne(self, digits: List[int]) -> List[int]:
+def plusOne(digits):
     
     for i in range(len(digits)-1, 0, -1):
         if(digits[i] < 9):
