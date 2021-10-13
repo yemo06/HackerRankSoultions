@@ -7,12 +7,13 @@ def firstDuplicate(a):
     if(len(a)<2):
         return -1    
     else:
-        lowidx = len(a)
+        lowidx = 0
         for i in range(len(a)):
-            for j in range(i+1,len(a)-1,1):
+            for j in range(i+1,len(a),1):
                 if(a[i] ==a [j] & j <= lowidx):
                     lowidx =j
-    if(lowidx == len(a)):
+    if(lowidx == 0):
         return -1
     else:
         return lowidx
+    
